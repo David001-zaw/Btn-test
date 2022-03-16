@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test</title>
+    <link rel="stylesheet" href="btnTestStyle.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Dancing+Script">
+</head>
+
+<body>
+    <div class="container">
+        <a href="#"><span>View Projects</span></a>
+    </div>
+    <div class="container">
+        <div class="button">Click Me</div>
+    </div>
+    <div class="container">
+        <a href="#"><span>
+            <img src="g1.jpg" alt="">
+        </span></a>
+    </div>
+    <div class="section">
+        <div class="center">
+            <div class="button_container">
+                <a class="button at_the_same_time">At the same time</a>
+                <a class="button one_after_the_other">One after the other</a>
+            </div>
+        </div>
+    </div>
+    <div class="section sec-two">
+        <a href="#" class="box">
+            <div class="box-inner">
+                View more projects
+            </div>
+        </a>
+    </div>
+    <div class="section sec-two">
+        <a href="#" class="fancy-btn">Oh my Golly gosh.</a> <br>
+    </div>
+    <div class="section sec-two">
+        <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+            <defs>
+                <symbol id="arrow" viewBox="0 0 100 100">
+                    <path d="M12.5 45.83h64.58v8.33H12.5z" />
+                    <path d="M59.17 77.92l-5.84-5.84L75.43 50l-22.1-22.08 5.84-5.84L87.07 50z" />
+                </symbol>
+            </defs>
+        </svg>
+
+        <div class="box-two">
+            <div class="content">
+                <a href="#" class="button">
+                    Button Text
+                    <span>
+                        <svg>
+                            <use xlink:href="#arrow" href="#arrow"></use>
+                        </svg>
+                    </span>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <a href="tel:+959789288363">Call David</a>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        $(document).ready(function() {
+    
+            var audio  = new Audio('https://s3-us-west-2.amazonaws.com/s.cdpn.io/242518/click.mp3');
+            var audio2 = new Audio('https://s3-us-west-2.amazonaws.com/s.cdpn.io/242518/clickUp.mp3')
+        
+            $(".button").mousedown(function() {
+            audio2.load();
+            audio2.play();
+            });
+            
+            $(".button").mouseup(function() {
+            audio.load();
+            audio.play();
+            });
+        });
+    </script>
+</body>
+
+</html>
