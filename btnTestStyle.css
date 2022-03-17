@@ -370,7 +370,7 @@
 
 
 
-.button {
+.btnsound {
     text-align: center;
     height: 65px;
     width: 185px;
@@ -389,7 +389,7 @@
     transition: all .05s linear;
 }
 
-.button:active {
+.btnsound:active {
     box-shadow: 2px 2px 2px #777;
     border-bottom: 1px solid #c0392b;
     transform: translateY(3px);
